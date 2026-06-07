@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>History</h2>
+        <div id="history"></div>
+    </div>
+
+    <div class="main">
+
+        <div class="topbar">
+            <h1>🤖 AI Assistant</h1>
+            <button onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+
+        <div id="chat-box"></div>
+
+        <div class="input-area">
+            <input
+                type="text"
+                id="message"
+                placeholder="Ask something..."
+            >
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
