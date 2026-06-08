@@ -18,8 +18,8 @@ async function sendMessage() {
     try {
 
         const response = await fetch(
-            `http://127.0.0.1:8000/chat?msg=${encodeURIComponent(msg)}`
-        );
+    `${API_URL}/chat?msg=${encodeURIComponent(msg)}`
+   );
 
         const data = await response.json();
 
@@ -53,7 +53,7 @@ async function loadHistory() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/history"
+    `${API_URL}/history`
         );
 
         const data = await response.json();
