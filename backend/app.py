@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from database import save_chat, get_chats
-from chatbot import ask_bot
+from backend.database import save_chat, get_chats
+from backend.chatbot import ask_bot
 
 app = FastAPI()
 
