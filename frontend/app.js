@@ -1,3 +1,4 @@
+const API_URL = "https://your-ai-chatbot.onrender.com";
 async function sendMessage() {
 
     const msg = document.getElementById("message").value;
